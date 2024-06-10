@@ -1,0 +1,74 @@
+[
+	{
+		"id": 1,
+		"name": "Лыжи белые",
+		"price": 300,
+		"image": "css/assets/лыжи-1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Лыжи синие",
+		"price": 500,
+		"image": "css/assets/лыжи-2.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Лыжи красное-белые",
+		"price": 500,
+		"image": "css/assets/лыжи-3.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Лыжи с рисунком",
+		"price": 700,
+		"image": "css/assets/лыжи-4.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Коньки для девочек",
+		"price": 500,
+		"image": "css/assets/коньки-1.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Коньки для девочек",
+		"price": 500,
+		"image": "css/assets/коньки-2.jpg"
+	},
+	{
+		"id": 7,
+		"name": "Коньки для мальчиков",
+		"price": 500,
+		"image": "css/assets/коньки-3.jpg"
+	},
+	{
+		"id": 8,
+		"name": "Коньки для мальчиков",
+		"price": 500,
+		"image": "css/assets/коньки-4.jpg"
+	},
+	{
+		"id": 9,
+		"name": "Сноуборд ROXY",
+		"price": 1000,
+		"image": "css/assets/сноуборд-1.jpg"
+	},
+	{
+		"id": 10,
+		"name": "Сноуборд BURTON",
+		"price": 1500,
+		"image": "css/assets/сноуборд-2.jpg"
+	},
+	{
+		"id": 11,
+		"name": "Сноуборд BURTON",
+		"price": 1500,
+		"image": "css/assets/сноуборд-3.jpg"
+	},
+	{
+		"id": 12,
+		"name": "Сноуборд ROXY",
+		"price": 2000,
+		"image": "css/assets/сноуборд-4.jpg"
+	}
+]

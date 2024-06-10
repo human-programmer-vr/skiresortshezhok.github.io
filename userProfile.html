@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/user-profile.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+	<script src="js/index.js" defer></script>
+	<script src="https://kit.fontawesome.com/7134bbf101.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+
+	<header class="sub-header">
+		<nav>
+			<p class="logo">С Н Е Ж О Ч Е К</p>
+			<div class="nav-menu">
+				<i class="fa fa-times" id="hideMenu"></i>
+				<ul>
+					<li><a href="/" target="_blank">Главная</a></li>
+					<li><a href="products.html" target="_blank">Ассортимент</a></li>
+					<li><a href="services.html" target="_blank">Услуги</a></li>
+					<li><a href="about.html" target="_blank">О нас</a></li>
+					<li><a href="userProfile.html" target="_self"><i class="fa-regular fa-user"></i></a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" id="showMenu"></i>
+		</nav>
+		<h1>Личный кабинет</h1>
+	</header>
+
+
+	<main>
+
+		<section class="profile">
+			<h2>Ваш личный кабинет</h2>
+			<div class="container light-style flex-grow-0">
+				<div class="card overflow-hidden">
+					<div class="row no-gutters row-bordered row-border-light">
+						<div class="col-md-3 pt-1">
+							<div class="list-group list-group-flush account-settings-links">
+								<a class="list-group-item list-group-item-action active" data-toggle="list"
+									href="#account-general">Главная</a>
+								<a class="list-group-item list-group-item-action" data-toggle="list"
+									href="#account-change-password">Изменить пароль</a>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="tab-content">
+								<div class="tab-pane fade active show" id="account-general">
+									<div class="card-body media align-items-center">
+										<div class="media-body ml-4">
+											<img src="css/assets/user-photo.jpeg">
+											<label class="btn btn-outline-primary">
+												Загрузить новое фото
+												<input type="file" class="account-settings-fileinput">
+											</label> &nbsp;
+											<button type="button" class="btn btn-default md-btn-flat">Удалить</button>
+										</div>
+									</div>
+									<hr class="border-light m-0">
+									<div class="card-body">
+										<div class="form-group">
+											<label class="form-label">ФИО</label>
+											<input type="text" class="form-control mb-0" value="Остряков Дмитрий Александрович">
+										</div>
+										<div class="form-group">
+											<label class="form-label">Почта</label>
+											<input type="email" class="form-control mb-0" value="dima.proger@gmail.com">
+										</div>
+										<div class="form-group">
+											<label class="form-label">Пароль</label>
+											<input type="password" class="form-control mb-1" value="7899dhcnsaicaxh!I!h8xH9">
+										</div>
+										<div class="form-group">
+											<label class="form-label">Количество средств</label>
+											<input type="text" class="form-control mb-1" value="5000 р.">
+										</div>
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="account-change-password">
+									<div class="card-body pb-2">
+										<div class="form-group">
+											<label class="form-label">Текущий пароль</label>
+											<input type="password" class="form-control" value="7899dhcnsaicaxh!I!h8xH9">
+										</div>
+										<div class="form-group">
+											<label class="form-label">Новый пароль</label>
+											<input type="password" class="form-control" value="">
+										</div>
+										<div class="form-group">
+											<label class="form-label">Подтверждение смены пароля</label>
+											<input type="password" class="form-control" value="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-center mt-3">
+					<button type="button" class="btn btn-primary" style="background: linear-gradient(#8860D0, #5680E4)">Сохранить
+						изменения</button>&nbsp;
+					<button type="button" class="btn btn-default">Выйти</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<h4>Связь с нами</h4>
+		<div class="footer-info">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-youtube"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-phone"></i>
+		</div>
+		<p>Сделано с <i class="fa fa-heart-o"></i> горнолыжным курортом "Снежочек"</p>
+	</footer>
+</body>
+
+</html>

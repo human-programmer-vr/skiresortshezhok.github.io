@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', 'sans-serif';
+}
+
+.sub-header {
+	height: 70vh;
+	width: 100%;
+	background: url(assets/background-2.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+
+.sub-header h1 {
+	margin-top: 100px;
+}
+
+.about {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.about h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.about p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.row {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-about-us {
+	flex-basis: 31%;
+	background: linear-gradient(#8860D0, #5680E4);
+	border-radius: 10px;
+	margin: 2% 10px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.info-about-us h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+	color: #fff;
+}
+
+.info-about-us p {
+	color: #fff;
+}
+
+.info-about-us:hover {
+	box-shadow: 0 0 30px 0px #5680E9;
+}
+
+@media (max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+}
+
+/* Фотографии курорта */
+
+.photo {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.card-photo {
+	flex-basis: 28%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.card-photo img {
+	width: 100%;
+	display: block;
+}
+
+.title-photo {
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+
+.title-photo h3 {
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.title-photo:hover {
+	background-color: #1233b678;
+}
+
+.title-photo:hover h3 {
+	bottom: 49%;
+	opacity: 1;
+}
+
+/* Просьба */
+
+.important-text {
+	margin: 100px auto;
+	width: 80%;
+	background: url(assets/background-3.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 15px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.important-text h1 {
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.footer {
+	width: 100%;
+	background: url();
+	text-align: center;
+	padding: 30px 0;	
+}
+
+.footer h4 {
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.footer-info .fa {
+	color: #8860D0;
+	margin: 0 13px;
+	cursor: pointer;
+	padding: 18px 0;
+}
+
+@media (max-width: 700px) {
+	.important-text h1 {
+		font-size: 20px;
+	}
+} 

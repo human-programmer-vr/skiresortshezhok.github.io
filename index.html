@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/autorize-registration.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/autorize-registration.js" defer></script>
+	<script src="js/index.js" defer></script>
+	<script src="https://kit.fontawesome.com/7134bbf101.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<nav>
+			<p class="logo">С Н Е Ж О Ч Е К</p>
+			<div class="nav-menu">
+				<i class="fa fa-times" id="hideMenu"></i>
+				<ul>
+					<li><a href="/" target="_self">Главная</a></li>
+					<li><a href="products.html" target="_blank">Ассортимент</a></li>
+					<li><a href="services.html" target="_blank">Услуги</a></li>
+					<li><a href="about.html" target="_blank">О нас</a></li>
+					<button class="button autorize">Войти</button>
+					<button class="button registration">Зарегистрироваться</button>
+				</ul>
+			</div>
+			<i class="fa fa-bars" id="showMenu"></i>
+		</nav>
+
+
+		<div class="container-form">
+			<div class="wrapper-autorize">
+				<span class="icon-close ico-autorize">
+					<ion-icon name="close-circle-outline"></ion-icon>
+				</span>
+				<div class="form-box login open-form">
+					<h2>Войти</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail-outline"></ion-icon>
+							</span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed-outline"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="remember-forgot">
+							<label><input type="checkbox">Запомнить пароль</label>
+							<a href="#">Забыли пароль?</a>
+						</div>
+						<button class="btn">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-form">
+			<div class="wrapper-register">
+				<span class="icon-close ico-register">
+					<ion-icon name="close-circle-outline"></ion-icon>
+				</span>
+				<div class="form-box login open-form">
+					<h2>Регистрация</h2>
+					<form action="#">
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person-circle-outline"></ion-icon>
+							</span>
+							<input type="text" required>
+							<label>Фамилия</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person-circle-outline"></ion-icon>
+							</span>
+							<input type="text" required>
+							<label>Имя</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="person-circle-outline"></ion-icon>
+							</span>
+							<input type="text" required>
+							<label>Отчество</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="mail-outline"></ion-icon>
+							</span>
+							<input type="email" required>
+							<label>Почта</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed-outline"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Пароль</label>
+						</div>
+						<div class="input-box">
+							<span class="icon">
+								<ion-icon name="lock-closed-outline"></ion-icon>
+							</span>
+							<input type="password" required>
+							<label>Подтверждение пароля</label>
+						</div>
+						<button class="btn">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	
+	<main>
+		<section class="welcome-text">
+			<h1>Откройте для себя волшебный мир горнолыжного курорта "Снежочек"!</h1>
+			<p>Приглашаем вас на уникальное горнолыжное приключение, которое обещает принести вам незабываемые впечатления и адреналин!</p>
+		</section>
+	</main>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

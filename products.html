@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ассортимент</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/header-products.css">
+	<link rel="stylesheet" href="css/products.css">
+	<link rel="stylesheet" href="css/rentMessage.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="js/index.js" defer></script>
+	<script src="js/products.js" defer></script>
+	<script src="https://kit.fontawesome.com/7134bbf101.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header class="sub-header">
+		<nav>
+			<p class="logo">С Н Е Ж О Ч Е К</p>
+			<div class="nav-menu">
+				<i class="fa fa-times" id="hideMenu"></i>
+				<ul>
+					<li><a href="/" target="_blank">Главная</a></li>
+					<li><a href="products.html" target="_self">Ассортимент</a></li>
+					<li><a href="services.html" target="_blank">Услуги</a></li>
+					<li><a href="about.html" target="_blank">О нас</a></li>
+					<li><a href="userProfile.html" target="_blank"><i class="fa-regular fa-user"></i></a></li>
+					<li><i class="fa-solid fa-cart-shopping"><span class="quantity-product">0</span></i></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" id="showMenu"></i>
+		</nav>
+		<h1>Ассортимент</h1>
+
+		<div class="basket-table">
+			<h1>Корзина товаров</h1>
+			<div class="list-basket">
+				<!-- HTML-код генерируется в зависимости от выбранного товара пользователем -->
+			</div>
+			<button class="button rent" onclick="showMessage()">Арендовать</button>
+			<button class="button close">Закрыть</button>
+			
+	</header>
+
+	<main>
+		<section class="content">
+			<h2>Наши товары</h2>
+			<div class="list-products">
+				<!-- Список товаров загружается из json файла -->
+			</div>
+		</section>
+	</main>
+
+	<div class="message" id="text-message">
+		<img src="css/assets/comlete rent.png">
+		<h2>Аренда выполнена успешно <i class="fa fa-heart-o"></i></h2>
+		<p>Ваш заказ оформлен!</p>
+		<button type="button" class="button-close" onclick="closeMessage()">ОК</button>
+	</div>
+
+	<footer class="footer">
+		<h4>Связь с нами</h4>
+		<div class="footer-info">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-youtube"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-phone"></i>
+		</div>
+		<p>Сделано с <i class="fa fa-heart-o"></i> горнолыжным курортом "Снежочек"</p>
+	</footer>
+
+</body>
+
+</html>
