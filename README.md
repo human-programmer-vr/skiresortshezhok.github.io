@@ -1,0 +1,1 @@
+# skiresortshezhok.github.io
