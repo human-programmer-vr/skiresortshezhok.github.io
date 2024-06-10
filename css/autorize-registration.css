@@ -168,6 +168,12 @@
 /* media-query */
 
 @media (max-width: 700px) {
+	
+	.wrapper-autorize {
+		width: 400px;
+	}
+		
+	
 	.wrapper-register {
 		margin-top: 1.5em;
 		width: 400px;
