@@ -27,6 +27,7 @@ nav {
 }
 
 .nav-menu {
+	display: none;
 	flex: 1;
 	text-align: right;
 }
