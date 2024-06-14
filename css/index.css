@@ -27,9 +27,9 @@ nav {
 }
 
 .nav-menu {
-	display: none;
 	flex: 1;
 	text-align: right;
+	user-select: none;
 }
 
 .nav-menu ul li {
@@ -44,7 +44,7 @@ nav {
 	width: 0%;
 	height: 2px;
 	background-color: #fff;
-	display: none;
+	display: block;
 	margin: auto;
 	transition: 0.5s;
 }
@@ -105,13 +105,14 @@ nav .fa {
 	display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 300px) and (max-width: 900px) {
 	.logo {
 		padding-left: 10px;
 		font-size: 18px;
 	}
 	
 	.nav-menu {
+		display: none;
 		position: absolute;
 		backdrop-filter: blur(30px);
 		height: 100vh;
@@ -124,6 +125,7 @@ nav .fa {
 	}
 
 	.show-menu{
+		display: block;
 		position: absolute;
 		backdrop-filter: blur(30px);
 		height: 100vh;
@@ -132,10 +134,11 @@ nav .fa {
 		right: 0px;
 		text-align: left;
 		z-index: 2;
-		transition: 1s;
+		transition: 1s all;
 	}
 
 	.hide-menu {
+		display: none;
 		position: absolute;
 		backdrop-filter: blur(30px);
 		height: 100vh;
@@ -144,7 +147,7 @@ nav .fa {
 		right: -200px;
 		text-align: left;
 		z-index: 2;
-		transition: 1s;
+		transition: 1s all;
 	}
 
 	.nav-menu ul li {
@@ -155,7 +158,7 @@ nav .fa {
 		width: 0%;
 	}
 
-	.button {
+	.button .register {
 		padding: 0 15px;
 	}
 
@@ -178,6 +181,7 @@ nav .fa {
 	}
 	
 	.nav-menu {
+		display: none;
 		position: absolute;
 		backdrop-filter: blur(30px);
 		height: 100vh;
@@ -190,18 +194,20 @@ nav .fa {
 	}
 
 	.show-menu{
+		display: block;
 		position: absolute;
 		backdrop-filter: blur(30px);
 		height: 100vh;
 		width: 200px;
 		top: 0;
-		right: 0;
+		right: 0px;
 		text-align: left;
 		z-index: 2;
-		transition: 1s;
+		transition: 1s all;
 	}
 
 	.hide-menu {
+		display: none;
 		position: absolute;
 		backdrop-filter: blur(30px);
 		height: 100vh;
@@ -210,7 +216,7 @@ nav .fa {
 		right: -200px;
 		text-align: left;
 		z-index: 2;
-		transition: 1s;
+		transition: 1s all;
 	}
 
 	.nav-menu ul li {

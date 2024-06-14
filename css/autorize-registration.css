@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	user-select: none;
 }
 
 .wrapper-autorize {
@@ -12,7 +13,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 350px;
-	height: 400px;
+	height: 380px;
 	border: 2px solid #C1C8E4;
 	border-radius: 20px;
 	backdrop-filter: blur(65px);
@@ -35,7 +36,7 @@
 
 .form-box {
 	width: 90%;
-	padding: 40px;
+	margin-bottom: 1em;
 }
 
 .icon-close {
@@ -167,13 +168,12 @@
 
 /* media-query */
 
-@media (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 900px) {
 	
 	.wrapper-autorize {
 		width: 370px;
 	}
 		
-	
 	.wrapper-register {
 		margin-top: 1.5em;
 		width: 400px;

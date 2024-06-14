@@ -4,6 +4,12 @@
 	font-family: 'Helvetica, sans-serif';
 }
 
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .basket-table .list-basket .item img {
 	width: 100%;
 }
@@ -109,3 +115,21 @@
 	background-color: #8860D0;
 }
 
+@media (min-width: 300px) and (max-width: 900px) {
+	.container .basket-table.show-basket {
+		width: 340px;
+		height: 500px;
+		top: 3.5em;
+		right: inherit;
+	}
+
+	.price {
+		margin-top: 30px;
+	}
+
+	.container .basket-table.close-basket {
+		width: 300px;
+		height: 300px;
+		top: 50px;
+	}
+}

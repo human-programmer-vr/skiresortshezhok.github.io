@@ -8,6 +8,9 @@ const quantityNode = document.querySelector(`.quantity-product`);
 const rentButtonNode = document.querySelector(`.rent`);
 const closeButtonNode = document.querySelector(`.close`);
 const messageNode = document.querySelector(`#text-message`);
+const priceNode = document.querySelector(`.price`);
+
+const menuNode = document.querySelector(`.nav-menu`);
 
 let listProducts = [];
 let carts = [];
@@ -15,6 +18,9 @@ let carts = [];
 basketButtonNode.addEventListener(`click`, () => {
 	basketTableNode.classList.add(`show-basket`);
 	basketTableNode.classList.remove(`close-basket`);
+
+	menuNode.classList.add(`hide-menu`);
+	menuNode.classList.remove(`show-menu`);
 });
 
 closeBasketNode.addEventListener(`click`, () => {
@@ -25,8 +31,12 @@ closeBasketNode.addEventListener(`click`, () => {
 // кнопка аренды товара
 rentButtonNode.addEventListener(`click`, () => {
 	basketNode.innerHTML = '';
-	carts.length == 0 ? closeMessage() : showMessage();
+	priceNode.innerHTML = '';
 	quantityNode.innerHTML = 0;
+	carts.length == 0 ? closeMessage() : showMessage();
+
+	basketTableNode.classList.add(`close-basket`);
+	basketTableNode.classList.remove(`show-basket`);
 });
 
 closeButtonNode.addEventListener(`click`, () => {
@@ -51,8 +61,8 @@ listProductNode.addEventListener(`click`, (event) => {
 	}
 })
 
+// добавление в корзину
 const addToCart = (product_id) => {
-
 	let positionProductInCart = carts.findIndex((value) => value.product_id == product_id);
 
 	if (carts.length <= 0) {
@@ -73,6 +83,7 @@ const addToCart = (product_id) => {
 
 const addCartToHTML = () => {
 	basketNode.innerHTML = '';
+	let priceResult = 0;
 
 	let totalProduct = 0;
 	if (carts.length > 0) {
@@ -94,9 +105,11 @@ const addCartToHTML = () => {
 					<span class="minus">-</span>
 					<span>${item.quantity}</span>
 					<span class="plus">+</span>
-				</div>
-			`;
+				</div>`;
+			priceNode.innerHTML = `Итоговая стоимость: ${priceResult += info.price * item.quantity}р.`;
 		})
+	} else {
+		priceNode.innerHTML = `Итоговая стоимость: 0р.`;
 	}
 	quantityNode.innerHTML = totalProduct;
 };

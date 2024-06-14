@@ -11,4 +11,3 @@ hideNode.addEventListener(`click`, () => {
 	menuNode.classList.add('hide-menu');
 	menuNode.classList.remove('show-menu');
 });
-
