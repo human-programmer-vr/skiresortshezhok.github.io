@@ -170,6 +170,10 @@ img {
 		padding: 0 15px;
 	}
 
+	.btn-download {
+		margin-top: 10px;
+	}
+
 	nav .fa {
 		display: flex;
 		justify-content: flex-end;
@@ -249,5 +253,3 @@ img {
 		font-size: 16px;
 	}
 }
-
-
