@@ -115,6 +115,25 @@
 	background-color: #8860D0;
 }
 
+.arrow-up {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 6em;
+}
+
+.fa-arrow-up-long {
+	font-size: 2em;
+	background-color: #5AB9EA;
+	border-radius: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.fa-arrow-up-long:hover {
+	background-color: #fff;
+	color: #5AB9EA;
+}
+
 @media (min-width: 250px) and (max-width: 900px) {
 	.container .basket-table.show-basket {
 		width: 340px;
@@ -137,5 +156,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.arrow-up {
+		margin-right: 1.8em;
 	}
 }
